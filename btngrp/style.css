@@ -1,0 +1,50 @@
+:root {
+	--primary-color: #55FF59;
+	--font-color: #333;
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttongroup {
+	margin: 0;
+	display: flex;
+}
+
+.buttongroup > button {
+	font-family: Roboto, sans-serif;
+	font-size: 1.5vw;
+	padding: 0.5vh 0.5vw;
+	background-color: transparent;
+	border-style: solid;
+	border-color: var(--font-color);
+	border-width: 0.5vh 0 0.5vh 0.5vh;
+	color: var(--font-color);
+	cursor: pointer;
+}
+
+.buttongroup > button:hover {
+	background-color: var(--primary-color);
+}
+
+.buttongroup > button:first-of-type {
+	border-top-left-radius: 1vh;
+	border-bottom-left-radius: 1vh;
+	border-right-width: 0;
+}
+
+.buttongroup > button:last-of-type {
+	border-top-right-radius: 1vh;
+	border-bottom-right-radius: 1vh;
+	border-right-width: 0.5vh;
+}
